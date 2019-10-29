@@ -66,9 +66,9 @@ public class MainActivity extends AppCompatActivity {
             result.setImageResource(R.drawable.cat);
             Toast.makeText(MainActivity.this, "you so good", Toast.LENGTH_LONG).show();
         }
-        if(c < 5 || c > 0){
+        if(c < 5 && c > 0){
             time.setText("remaining times: " +c);
-        }else{
+        }else if(c < 0){
             time.setText("game over!!!!!!!!!");
         }
     }
